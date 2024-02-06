@@ -1,11 +1,15 @@
-import React from 'react'
+"use client";
+import React, { useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 const Admin = () => {
-  return (
-    <div>
-      admin Admin
-    </div>
-  )
-}
+  const router = useRouter();
 
-export default Admin
+  useEffect(() => {
+    router.push("/admin/login");
+  });
+
+  return <></>;
+};
+
+export default Admin;
