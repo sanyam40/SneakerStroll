@@ -5,7 +5,7 @@ export const connectdb =async()=>{
             dbName:"SneakerStroll",
         
         });
-        console.log("CONNECTED TO MONGODB");
+        console.log("Connected To MongoDB");
     }catch(error){
         consolelog("FAILED TO CONNECT");
         console.log(error);
